@@ -26,7 +26,7 @@ public class AddressBookMain {
                     + "\n 6: search user by state\n 7:view by city\n 8:view by state"
                     + "\n 9: sort by name\n 10:sort by zip\n 11: sort by city "
                     + "\n 12: sort by state\n 13:Switch Address Book"
-                    + "\n 13: Write to file\n 14. Read from file");
+                    + "\n 13: Write to file\n 14. Read from file\n 15. exit");
             option  = sc.nextInt();
             switch(option) {
                 case 1 :
@@ -90,6 +90,9 @@ public class AddressBookMain {
                 default:
                     exit = false;
 
+            }
+            if(option==15){
+                break;
             }
             System.out.println();
         }
